@@ -7,6 +7,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![Captured](images/Home1.jpg "A Thing of beauty is joy forever")
+
+<figure>
+  <img src="images/Home1.jpg" alt="Captured">
+  <figcaption>A Thing of beauty is joy forever.</figcaption>
+</figure>
+
 
 
