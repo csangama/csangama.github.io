@@ -10,7 +10,7 @@ redirect_from:
 
 <figure>
   <img src="images/Home1.jpg" alt="Captured">
-  <figcaption>A Thing of beauty is joy forever.</figcaption>
+  <figcaption style="text-align: center;"> A thing of beauty is joy forever.</figcaption>
 </figure>
 
 
