@@ -85,7 +85,7 @@ author:
   bio              : ""
   location         : "Location"
   employer         :
-  pubmed           : ""
+  #pubmed           : ""
   googlescholar    : "https://scholar.google.com/"
   email            :  "cshiremath23@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
