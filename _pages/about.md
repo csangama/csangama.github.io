@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-![Example Image](Images/Home1.jpg)
+![Example Image](images/Home1.jpg)
 
 A Thing of beauty is joy forever
 
