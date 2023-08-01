@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form with Toasts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="toast">
+        <div class="toast successMsgToast" role="alert" data-delay="5000">
+            <div class="toast-header bg-success text-light">
+                <strong class="toastMsg">Message Sent</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="toast errorMsgToast" role="alert" data-delay="5000">
+            <div class="toast-header bg-danger text-light">
+                <strong class="toastMsg">Not able to send message. Please try to contact me via email id given or try after sometime.</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="toast invalidEmailToast" role="alert" data-delay="3000">
+            <div class="toast-header bg-danger text-light">
+                <strong class="toastMsg">Invalid email id.</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="toast nullDataToast" role="alert" data-delay="3000">
+            <div class="toast-header bg-danger text-light">
+                <strong class="toastMsg">Fill all the fields.</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="row">
+        <div class="heading text-center d-block col-12">
+            <h2>Let's connect</h2>
+        </div>
+        <div id="form" class="col-12">
+            <form id="contactMeForm" class="row mx-auto">
+                <div class="form-group col-12 col-lg-6">
+                    <label for="name-input">Name</label>
+                    <input name="name" type="text" class="form-control" id="name-input" placeholder="Write your name here" />
+                    <small id="nameHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group col-12 col-lg-6">
+                    <label for="email-input">Email</label>
+                    <input name="email" type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Write your Email Id here" />
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group col-12">
+                    <label for="message-input">Message</label>
+                    <textarea name="msg" class="form-control" id="message-input" rows="3" placeholder="Write your message here"></textarea>
+                    <small id="messageHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="col-12 text-center my-3">
+                    <button id="sendMsg" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="YOUR_GOOGLE_APPS_SCRIPT_JS_FILE"></script>
+</body>
+</html>
